@@ -21,6 +21,12 @@
 		CB823D4518BC798400FA5BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB823D2718BC798400FA5BAB /* UIKit.framework */; };
 		CB823D4D18BC798400FA5BAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB823D4B18BC798400FA5BAB /* InfoPlist.strings */; };
 		CB823D4F18BC798400FA5BAB /* SmartCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB823D4E18BC798400FA5BAB /* SmartCameraTests.m */; };
+		CB823D5A18BD22C100FA5BAB /* Detection.mm in Sources */ = {isa = PBXBuildFile; fileRef = CB823D5918BD22C100FA5BAB /* Detection.mm */; };
+		CB823D5C18BD243500FA5BAB /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB823D5B18BD243500FA5BAB /* opencv2.framework */; };
+		CB823D6118BD293D00FA5BAB /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB823D5E18BD293D00FA5BAB /* haarcascade_mcs_eyepair_big.xml */; };
+		CB823D6218BD293D00FA5BAB /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB823D5F18BD293D00FA5BAB /* haarcascade_mcs_mouth.xml */; };
+		CB823D6318BD293D00FA5BAB /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB823D6018BD293D00FA5BAB /* lbpcascade_frontalface.xml */; };
+		CB823D6518BD295800FA5BAB /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = CB823D6418BD295800FA5BAB /* haarcascade_frontalface_alt.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,13 @@
 		CB823D4A18BC798400FA5BAB /* SmartCameraTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmartCameraTests-Info.plist"; sourceTree = "<group>"; };
 		CB823D4C18BC798400FA5BAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB823D4E18BC798400FA5BAB /* SmartCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartCameraTests.m; sourceTree = "<group>"; };
+		CB823D5818BD22C100FA5BAB /* Detection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detection.h; sourceTree = "<group>"; };
+		CB823D5918BD22C100FA5BAB /* Detection.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Detection.mm; sourceTree = "<group>"; };
+		CB823D5B18BD243500FA5BAB /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		CB823D5E18BD293D00FA5BAB /* haarcascade_mcs_eyepair_big.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_eyepair_big.xml; sourceTree = "<group>"; };
+		CB823D5F18BD293D00FA5BAB /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
+		CB823D6018BD293D00FA5BAB /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		CB823D6418BD295800FA5BAB /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +75,7 @@
 			files = (
 				CB823D2618BC798400FA5BAB /* CoreGraphics.framework in Frameworks */,
 				CB823D2818BC798400FA5BAB /* UIKit.framework in Frameworks */,
+				CB823D5C18BD243500FA5BAB /* opencv2.framework in Frameworks */,
 				CB823D2418BC798400FA5BAB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +115,7 @@
 		CB823D2218BC798400FA5BAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB823D5B18BD243500FA5BAB /* opencv2.framework */,
 				CB823D2318BC798400FA5BAB /* Foundation.framework */,
 				CB823D2518BC798400FA5BAB /* CoreGraphics.framework */,
 				CB823D2718BC798400FA5BAB /* UIKit.framework */,
@@ -124,12 +139,15 @@
 		CB823D2A18BC798400FA5BAB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB823D5D18BD28B100FA5BAB /* cascadeFiles */,
 				CB823D3818BC798400FA5BAB /* embeddedViewController.h */,
 				CB823D3918BC798400FA5BAB /* embeddedViewController.m */,
 				CB823D2B18BC798400FA5BAB /* SmartCamera-Info.plist */,
 				CB823D2C18BC798400FA5BAB /* InfoPlist.strings */,
 				CB823D2F18BC798400FA5BAB /* main.m */,
 				CB823D3118BC798400FA5BAB /* SmartCamera-Prefix.pch */,
+				CB823D5818BD22C100FA5BAB /* Detection.h */,
+				CB823D5918BD22C100FA5BAB /* Detection.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +168,17 @@
 				CB823D4B18BC798400FA5BAB /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB823D5D18BD28B100FA5BAB /* cascadeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CB823D6418BD295800FA5BAB /* haarcascade_frontalface_alt.xml */,
+				CB823D5E18BD293D00FA5BAB /* haarcascade_mcs_eyepair_big.xml */,
+				CB823D5F18BD293D00FA5BAB /* haarcascade_mcs_mouth.xml */,
+				CB823D6018BD293D00FA5BAB /* lbpcascade_frontalface.xml */,
+			);
+			name = cascadeFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +261,10 @@
 				CB823D3C18BC798400FA5BAB /* Images.xcassets in Resources */,
 				CB823D2E18BC798400FA5BAB /* InfoPlist.strings in Resources */,
 				CB823D3718BC798400FA5BAB /* Main.storyboard in Resources */,
+				CB823D6118BD293D00FA5BAB /* haarcascade_mcs_eyepair_big.xml in Resources */,
+				CB823D6218BD293D00FA5BAB /* haarcascade_mcs_mouth.xml in Resources */,
+				CB823D6518BD295800FA5BAB /* haarcascade_frontalface_alt.xml in Resources */,
+				CB823D6318BD293D00FA5BAB /* lbpcascade_frontalface.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB823D3A18BC798400FA5BAB /* embeddedViewController.m in Sources */,
+				CB823D5A18BD22C100FA5BAB /* Detection.mm in Sources */,
 				CB823D3418BC798400FA5BAB /* embeddedAppDelegate.m in Sources */,
 				CB823D3018BC798400FA5BAB /* main.m in Sources */,
 			);
@@ -379,6 +413,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gubrian/Documents/xcode_lib/SmartCamera,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartCamera/SmartCamera-Prefix.pch";
 				INFOPLIST_FILE = "SmartCamera/SmartCamera-Info.plist";
@@ -392,6 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gubrian/Documents/xcode_lib/SmartCamera,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SmartCamera/SmartCamera-Prefix.pch";
 				INFOPLIST_FILE = "SmartCamera/SmartCamera-Info.plist";
@@ -461,6 +503,7 @@
 				CB823D5418BC798400FA5BAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB823D5518BC798400FA5BAB /* Build configuration list for PBXNativeTarget "SmartCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +512,7 @@
 				CB823D5718BC798400FA5BAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
