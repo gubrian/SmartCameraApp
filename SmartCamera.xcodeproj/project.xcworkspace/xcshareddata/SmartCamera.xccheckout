@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E9C51960-D6B3-4A8A-882D-F42B1A88E5D1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SmartCamera</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26E5A5FA-4767-4F8E-A44E-4318042DC06E</key>
+		<string>https://github.com/gubrian/Hello-World.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SmartCamera.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26E5A5FA-4767-4F8E-A44E-4318042DC06E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gubrian/Hello-World.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>26E5A5FA-4767-4F8E-A44E-4318042DC06E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26E5A5FA-4767-4F8E-A44E-4318042DC06E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SmartCamera</string>
+		</dict>
+	</array>
+</dict>
+</plist>

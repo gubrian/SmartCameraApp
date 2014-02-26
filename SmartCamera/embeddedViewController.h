@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Detection.h"
+#import "FaceDetection.h"
 
-@interface embeddedViewController : UIViewController
+@interface embeddedViewController : UIViewController {
+    cv::CascadeClassifier faceDetector;
+}
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

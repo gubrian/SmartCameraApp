@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <opencv2/opencv.hpp>
+#import "opencv2/highgui/ios.h"
+#import "vector"
 
-
-// The class for loading xml file, and do detection.
-// Try to avoid duplicate image memory.
 @interface Detection : NSObject
--(cv::CascadeClassifier) detector: (NSString*) file_name;
+// Load the xml file
+-(void) detector: (NSString*) file_name facedetector:(cv::CascadeClassifier&) faceDetector;
+
+// Do detection on the
+-(std::vector<cv::Rect>) doDetection: (UIImage*) image detector:(cv::CascadeClassifier&) faceDetector;
 
 @end
