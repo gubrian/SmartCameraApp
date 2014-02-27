@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0E5C9118BEB19400230FC5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8A18BEB19400230FC5 /* Accelerate.framework */; };
+		CB0E5C9218BEB19400230FC5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8B18BEB19400230FC5 /* AssetsLibrary.framework */; };
+		CB0E5C9318BEB19400230FC5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8C18BEB19400230FC5 /* AVFoundation.framework */; };
+		CB0E5C9418BEB19400230FC5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8D18BEB19400230FC5 /* CoreImage.framework */; };
+		CB0E5C9518BEB19400230FC5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8E18BEB19400230FC5 /* CoreMedia.framework */; };
+		CB0E5C9618BEB19400230FC5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C8F18BEB19400230FC5 /* CoreVideo.framework */; };
+		CB0E5C9718BEB19400230FC5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0E5C9018BEB19400230FC5 /* QuartzCore.framework */; };
 		CB823D2418BC798400FA5BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB823D2318BC798400FA5BAB /* Foundation.framework */; };
 		CB823D2618BC798400FA5BAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB823D2518BC798400FA5BAB /* CoreGraphics.framework */; };
 		CB823D2818BC798400FA5BAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB823D2718BC798400FA5BAB /* UIKit.framework */; };
@@ -42,6 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0E5C8A18BEB19400230FC5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CB0E5C8B18BEB19400230FC5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		CB0E5C8C18BEB19400230FC5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CB0E5C8D18BEB19400230FC5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CB0E5C8E18BEB19400230FC5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CB0E5C8F18BEB19400230FC5 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		CB0E5C9018BEB19400230FC5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB823D2018BC798400FA5BAB /* SmartCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB823D2318BC798400FA5BAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB823D2518BC798400FA5BAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +92,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0E5C9118BEB19400230FC5 /* Accelerate.framework in Frameworks */,
+				CB0E5C9218BEB19400230FC5 /* AssetsLibrary.framework in Frameworks */,
+				CB0E5C9318BEB19400230FC5 /* AVFoundation.framework in Frameworks */,
+				CB0E5C9418BEB19400230FC5 /* CoreImage.framework in Frameworks */,
+				CB0E5C9518BEB19400230FC5 /* CoreMedia.framework in Frameworks */,
+				CB0E5C9618BEB19400230FC5 /* CoreVideo.framework in Frameworks */,
+				CB0E5C9718BEB19400230FC5 /* QuartzCore.framework in Frameworks */,
 				CB823D2618BC798400FA5BAB /* CoreGraphics.framework in Frameworks */,
 				CB823D2818BC798400FA5BAB /* UIKit.framework in Frameworks */,
 				CB823D5C18BD243500FA5BAB /* opencv2.framework in Frameworks */,
@@ -120,6 +141,13 @@
 		CB823D2218BC798400FA5BAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB0E5C8A18BEB19400230FC5 /* Accelerate.framework */,
+				CB0E5C8B18BEB19400230FC5 /* AssetsLibrary.framework */,
+				CB0E5C8C18BEB19400230FC5 /* AVFoundation.framework */,
+				CB0E5C8D18BEB19400230FC5 /* CoreImage.framework */,
+				CB0E5C8E18BEB19400230FC5 /* CoreMedia.framework */,
+				CB0E5C8F18BEB19400230FC5 /* CoreVideo.framework */,
+				CB0E5C9018BEB19400230FC5 /* QuartzCore.framework */,
 				CB823D5B18BD243500FA5BAB /* opencv2.framework */,
 				CB823D2318BC798400FA5BAB /* Foundation.framework */,
 				CB823D2518BC798400FA5BAB /* CoreGraphics.framework */,

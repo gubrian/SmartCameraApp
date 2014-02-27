@@ -15,6 +15,6 @@
 -(void) detector: (NSString*) file_name facedetector:(cv::CascadeClassifier&) faceDetector;
 
 // Do detection on the
--(std::vector<cv::Rect>) doDetection: (UIImage*) image detector:(cv::CascadeClassifier&) faceDetector;
+-(std::vector<cv::Rect>) doDetection: (cv::Mat&) image detector:(cv::CascadeClassifier&) faceDetector;
 
 @end

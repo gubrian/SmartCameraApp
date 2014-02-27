@@ -9,11 +9,18 @@
 #import <UIKit/UIKit.h>
 #import "Detection.h"
 #import "FaceDetection.h"
+#include "opencv2/core/core.hpp"
 
-@interface embeddedViewController : UIViewController {
+@interface embeddedViewController : UIViewController<CvVideoCameraDelegate> {
     cv::CascadeClassifier faceDetector;
+    CvVideoCamera* videoCamera;
+    IBOutlet UIImageView *imageView;
 }
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (nonatomic, strong) CvVideoCamera* videoCamera;
+- (IBAction)start:(id)sender;
+
+
 
 @end

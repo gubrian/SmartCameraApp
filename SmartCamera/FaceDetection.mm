@@ -13,7 +13,7 @@
 -(id) init: (cv::CascadeClassifier&) faceDetector{
     self = [super init];
     NSString* cascadePath = [[NSBundle mainBundle]
-                             pathForResource:@"haarcascade_frontalface_alt"
+                             pathForResource:@"lbpcascade_frontalface"
                              ofType:@"xml"];
     [self detector:cascadePath facedetector:faceDetector];
     return self;

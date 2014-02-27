@@ -14,9 +14,7 @@
     faceDetector.load([file_name UTF8String]);
 }
 
--(std::vector<cv::Rect>) doDetection: (UIImage*) image detector:(cv::CascadeClassifier&)faceDetector{
-    cv::Mat faceImage;
-    UIImageToMat(image, faceImage);
+-(std::vector<cv::Rect>) doDetection: (cv::Mat&) faceImage detector:(cv::CascadeClassifier&)faceDetector{
     cv::Mat gray;
     cvtColor(faceImage, gray, CV_BGR2GRAY);
     std::vector<cv::Rect> faces;
