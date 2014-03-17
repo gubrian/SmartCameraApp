@@ -10,13 +10,28 @@
 
 @implementation FaceDetection
 
--(id) init: (cv::CascadeClassifier&) faceDetector{
-    self = [super init];
-    NSString* cascadePath = [[NSBundle mainBundle]
-                             pathForResource:@"lbpcascade_frontalface"
+-(id) init:(int) index{
+    if(index == 0) {
+        self = [super init];
+        NSString* cascadePath = [[NSBundle mainBundle]
+                             pathForResource:@"haarcascade_frontalface_alt"
                              ofType:@"xml"];
-    [self detector:cascadePath facedetector:faceDetector];
+        [super buildDetector:cascadePath];
+    } else {
+        self = [super init];
+        NSString* cascadePath = [[NSBundle mainBundle]
+                                 pathForResource:@"lbpcascade_frontalface"
+                                 ofType:@"xml"];
+        [super buildDetector:cascadePath];
+    }
     return self;
+}
+
+-(void) updateSequence:(std::vector<cv::Rect>&) faces {
+    DetectedObject *o = [self.sequence lastObject];
+    if(!faces.empty() && (o== nil || (o != nil && ![o compare:faces[0]]))) {
+        [self.sequence addObject:[[DetectedObject alloc]init:faces[0].x Y:faces[0].y Width:faces[0].width Height:faces[0].height]];
+    }
 }
 
 @end
